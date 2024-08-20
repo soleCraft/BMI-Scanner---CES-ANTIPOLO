@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #100F1B;
+    --secondary-color: rgba(37, 37, 58, 0.575);
+    --input-element-background-color: rgba(255, 255, 255, 0.575);
+    --button-color: #115BCA;
+}
+
+
+img {
+    filter: invert(70%);
+}
+
+#html5-qrcode-anchor-scan-type-change {
+    color: var(--input-element-background-color);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#html5-qrcode-button-camera-permission {
+    background-color: var(--button-color);
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 280px;
+    border-radius: 30px;
+    margin: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: .80px;
+    cursor: pointer;
+}
+
+#html5-qrcode-button-camera-permission,
+#html5-qrcode-button-file-selection,
+#html5-qrcode-button-camera-stop,
+#html5-qrcode-button-camera-start {
+    background-color: var(--button-color);
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 280px;
+    border-radius: 30px;
+    margin: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: .80px;
+    cursor: pointer;
+}
+
+#html5-qrcode-button-file-selection {
+    font-size: 14px;
+}
+
+div{
+    color: var(--input-element-background-color);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: var(--primary-color);
+    /* overflow-y: hidden; */
+}
+
+#scannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    height: auto;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#reader {
+    position: relative;
+    width: 400px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    width: 90%;
+    max-width: 400px;
+    display: none;
+}
+
+#scanButton{
+    align-self: center;
+    position: static; 
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    letter-spacing: .12rem;
+    width: 21rem;
+    padding: 13px 18px;
+    font-size: 19px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-content {
+    text-align: left;
+    width: 70%;
+    height: 70%;
+}
+
+.popup h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.popup-content p {
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.popup-content p strong {
+    color: var(--primary-color);
+    
+}
+
+.popup .wrapper {
+    text-align: center;
+    margin-top: 1.5rem;
+}
